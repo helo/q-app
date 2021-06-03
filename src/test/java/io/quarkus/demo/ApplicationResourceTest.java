@@ -15,7 +15,7 @@ public class ApplicationResourceTest {
           .when().get("/api/hello")
           .then()
              .statusCode(200)
-             .body(is("hello"));
+             .body(is("Hello"));
     }
 
 }
