@@ -22,7 +22,7 @@ public class APIResource {
     @Path("/version")
     @Produces(MediaType.TEXT_PLAIN)
     public String getVersion(){
-        return "Green";
+        return "Blue";
     }
 
     @GET
