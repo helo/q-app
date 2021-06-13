@@ -18,6 +18,13 @@ public class APIResource {
     @Inject @ConfigProperty(name = "greeting.message")
     Optional<String> message;
 
+    @GET 
+    @Path("/version")
+    @Produces(MediaType.TEXT_PLAIN)
+    public String getVersion(){
+        return "Green";
+    }
+
     @GET
     @Path("/hello")
     @Produces(MediaType.TEXT_PLAIN)
